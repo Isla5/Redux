@@ -7,9 +7,7 @@ class RoomList extends Component {
     renderList() {
         return this.props.rooms.map((room) => {
             return (
-                <li
-                  key={room.name}
-                  onClick={()=>this.props.selectRoom(room)}>
+                <li key={room.name} onClick={() => this.props.selectRoom(room)}>
                     {room.name}
                 </li>
             )
